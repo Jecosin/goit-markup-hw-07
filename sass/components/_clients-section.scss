@@ -1,0 +1,45 @@
+clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 0 -30px;
+}
+
+.clients__item {
+    flex-basis: calc(100% / 6 - 30px);
+    margin-left: 30px;
+}
+
+.clients__item:not(:nth-last-child()) {
+    margin-right: 30px;
+}
+
+.clients__links {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    color: $icone-color;
+    fill: currentColor;
+    border: 1px solid $icone-color;
+    border-radius: 4px;
+
+    transition: fill 250ms $timing-functione,
+        border-color 250ms $timing-functione;
+}
+
+.clients__icones {
+    display: flex;
+    align-self: center;
+    width: 106px;
+    height: 60px;
+
+}
+
+.clients__links:hover,
+.clients__links:focus,
+.clients__icones:focus {
+    fill: $accsent-color;
+    border-color: $accsent-color;
+}

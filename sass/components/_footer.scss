@@ -1,0 +1,198 @@
+.footer {
+    background-color: $footer-bacground-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer--conteiner {
+    display: flex;
+    align-items: baseline;
+}
+
+.sochmed--conteiner {
+    margin-left: 70px;
+
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
+
+
+
+    color: $hero-tittle-color;
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+
+}
+
+.footer__logo--accsent {
+    color: $accsent-color;
+}
+
+.contacts__item {
+    margin-bottom: 9px;
+}
+
+.contacts__link--adress {
+    color: $primary-background-color;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.17;
+    text-decoration: none;
+
+    transition: color 250ms $timing-functione;
+}
+
+.contacts__link {
+    color: $footer-cotnacts-color;
+
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+
+    transition: color 250ms $timing-functione;
+}
+
+
+
+
+.contacts__link--adress:hover,
+.contacts__link--adress:focus,
+.contacts__link:hover,
+.contacts__link:focus {
+    color: $accsent-color;
+}
+
+.footer__title {
+    color: $primary-background-color;
+
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.footer-sochmed {
+    display: flex;
+}
+
+.footer-sochmed__item {
+    display: flex;
+
+}
+
+.footer-sochmed__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $hero-tittle-color;
+    fill: currentColor;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms $timing-functione;
+}
+
+.footer-sochmed__links:hover,
+.footer-sochmed__links:focus {
+    color: $hero-tittle-color;
+    background-color: $accsent-color;
+}
+
+.footer-sochmed__icones {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.subskribe-conteiner {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: baseline;
+}
+
+.subskribe-form__label--flex {
+    display: flex;
+}
+
+.subskribe-form__input {
+    min-width: 358px;
+    min-height: 50px;
+
+    padding-left: 16px;
+
+    background-color: $footer-bacground-color;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    color: $hero-tittle-color;
+
+    outline: none;
+
+}
+
+.subskribe-form__input:focus {
+    border-color: $accsent-color;
+}
+
+.subskribe-form__icone {
+    margin-left: 10px;
+}
+
+.subskribe-form__button {
+    color: $hero-tittle-color;
+    background-color: $accsent-color;
+
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+
+    border: 0;
+
+    transition: background-color 250ms $timing-functione;
+}
+
+.subskribe-form__button:hover,
+.subskribe-form__button:focus {
+    background-color: $second-accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
