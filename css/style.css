@@ -727,7 +727,7 @@ color: var(--hero-tittle-color);
             margin-left: 30px;
 }
 
-.clients__item:not(:nth-last-child()) {
+.clients__item:not(:nth-last-child) {
     margin-right: 30px;
 }
 

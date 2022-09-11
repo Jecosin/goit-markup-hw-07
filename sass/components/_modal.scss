@@ -67,12 +67,14 @@
     justify-content: center;
 
     transition: fill 250ms $timing-functione;
+
+    &:hover,
+    &:focus {
+            fill: $accsent-color;
+        }
 }
 
-.modal__close-button:hover,
-.modal__close-button:focus {
-    fill: $accsent-color;
-}
+
 
 .modal__close-img {
     background-color: $primary-background-color;
@@ -118,11 +120,12 @@
 
     outline: none;
 
+    &:focus {
+            border-color: $accsent-color;
+        }
 }
 
-.form__input:focus {
-    border-color: $accsent-color;
-}
+
 
 .form__icon {
     position: absolute;
@@ -131,11 +134,13 @@
 
     display: inline-block;
     transition: fill 250ms $timing-functione;
+
+    .form__input:focus~& {
+            fill: $accsent-color;
+        }
 }
 
-.form__input:focus~.form__icon {
-    fill: $accsent-color;
-}
+
 
 .comment__label {
     font-size: 12px;
@@ -160,14 +165,14 @@
     resize: none;
 
     transition: border-color 250ms $timing-functione;
-}
+    
+    &:focus {
+            border-color: $accsent-color;
+        }
 
-.comment__input:focus {
-    border-color: $accsent-color;
-}
-
-.comment__input ::placeholder {
-    color: rgba(117, 117, 117, 0.5);
+    & ::placeholder {
+            color: rgba(117, 117, 117, 0.5);
+        }
 }
 
 
@@ -222,11 +227,10 @@
     color: $accsent-color;
     margin-left: 4px;
 
-}
-
-.agree-field__condition:hover,
-.agree-field__condition:focus {
-    text-decoration: none;
+    &:hover,
+    &:focus {
+            text-decoration: none;
+        }
 }
 
 
@@ -253,11 +257,12 @@
 
     transition: background-color 250ms $timing-functione;
 
+    &:hover,
+    &:focus {
+            background-color: $second-accent-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
+
 }
 
-.modal__button:hover,
-.modal__button:focus {
-    background-color: $second-accent-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-}

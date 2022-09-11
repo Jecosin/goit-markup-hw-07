@@ -49,11 +49,12 @@
     border-color: transparent;
 
     transition: background-color 250ms $timing-functione;
+
+    &:hover,
+    &:focus {
+            background-color: $second-accent-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
 }
 
-.hero__button:hover,
-.hero__button:focus {
-    background-color: $second-accent-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-}

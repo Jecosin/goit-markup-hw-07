@@ -25,8 +25,9 @@
 .second-section__items {
     position: relative;
     display: inline-block;
+
+    &+& {
+            margin-left: 30px;
+        }
 }
 
-.second-section__items+.second-section__items {
-    margin-left: 30px;
-}
