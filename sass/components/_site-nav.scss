@@ -7,6 +7,8 @@
 .site-nav {
     display: flex;
     margin-left: 93px;
+
+    @extend %list
 }
 
 .site-nav__items {
@@ -56,6 +58,10 @@
     opacity: 0;
     transition: opacity 250ms $timing-functione;
 }
+
+ .site-nav__link--current {
+    color: $accsent-color;
+ }
 
 .site-nav__link--current::after {
     opacity: 1;

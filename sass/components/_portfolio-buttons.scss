@@ -6,6 +6,8 @@
 
 .port-btn {
     display: flex;
+
+    @extend %list;
 }
 
 .port-btn__items {

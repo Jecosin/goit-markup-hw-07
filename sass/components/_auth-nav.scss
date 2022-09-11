@@ -1,6 +1,8 @@
 .auth-nav {
     display: flex;
     margin-left: auto;
+
+    @extend %list;
 }
 
 .auth-nav__link {

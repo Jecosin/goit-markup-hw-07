@@ -1,5 +1,7 @@
 .second-section {
     display: flex;
+
+    @extend %list;
 }
 
 .second-section__discript {

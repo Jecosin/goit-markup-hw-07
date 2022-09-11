@@ -6,6 +6,8 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 0 -30px;
+
+    @extend %list;
 }
 
 .card-section__item {
@@ -45,44 +47,4 @@
     color: $secondory-text-color;
     font-size: 16px;
     line-height: 1.71;
-}
-
-.team-sochmed {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-
-
-}
-
-.team-sochmed__item {
-    display: flex;
-
-}
-
-.team-sochmed__links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    color: $icone-color;
-    fill: currentColor;
-
-    transition: background-color 250ms $timing-functione,
-        color 250ms $timing-functione;
-
-        &:hover,
-        &:focus {
-                color: $hero-tittle-color;
-                background-color: $accsent-color;
-            }
-}
-
-
-.team-sochmed__icones {
-    width: 20px;
-    height: 20px;
 }
